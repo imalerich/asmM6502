@@ -9,7 +9,7 @@ syn clear
 syn case ignore
 "
 " registers
-syn keyword asm65Reg x y a
+syn keyword asm65Reg X Y A S VSYNC VBLANK WSYNC RSYNC NUSIZ0 NUSIZ1 COLUP0 COLUP1 COLUPF COLUBK CTRLPF REFP0 REFP1 PF0 PF1 PF2 RESP0 RESP1 RESM0 RESM1 RESBL AUDC0 AUDC1 AUDF0 AUDF1 AUDV0 AUDV1 GRP0 GRP1 ENAM0 ENAM1 ENABL HMP0 HMP1 HMM0 HMM1 HMBL VDELP0 VDELP1 VDELBL RESMP0 RESMP1 HMOVE HMCLR CXCLR CXM0P CXM1P CXP0FB CXP1FB CXM0FB CXM1FB CXBLPF CXPPMM INPT0 INPT1 INPT2 INPT3 INPT4 INPT5 SWCHA SWACNT SWCHB SWBCNT INTIM TIMINT TIM1T TIM8T TIM64T T1024T
 
 " opcodes:
 
@@ -45,29 +45,29 @@ syn match asmImmediate	"#>\d\+\>"
 "
 "syn case match
 if !exists("did_asm65_syntax_inits")
-  let did_rgb_asm_syntax_inits = 1
+	let did_rgb_asm_syntax_inits = 1
 
-  " The default methods for highlighting.  Can be overridden later
-  hi link asmLabel	Label
-  hi link asmString	String
-  hi link asmComment	Comment
-  hi link asmSettings	Statement
- hi link asm65Op Statement
- hi link asmSallyUndoc Special
- hi link asm65Reg Identifier
- hi link asm65Branch Conditional
- hi link asmTodo Debug
+	" The default methods for highlighting.  Can be overridden later
+	hi link asmLabel	Label
+  	hi link asmString	String
+  	hi link asmComment	Comment
+  	hi link asmSettings	Statement
+  	hi link asm65Op Statement
+  	hi link asmSallyUndoc Special
+  	hi link asm65Reg Identifier
+  	hi link asm65Branch Conditional
+  	hi link asmTodo Debug
 
-  hi link asmImmediate Special
+  	hi link asmImmediate Special
 
-  hi link hexNumber	Number
-  hi link binNumber	Number
-  hi link decNumber	Number
+  	hi link hexNumber	Number
+  	hi link binNumber	Number
+  	hi link decNumber	Number
 
-  " My default color overrides:
-"  hi asmSpecialComment ctermfg=red
-"  hi asmIdentifier ctermfg=lightcyan
-"  hi asmType ctermbg=black ctermfg=brown
+	" My default color overrides:
+	"  hi asmSpecialComment ctermfg=red
+	"  hi asmIdentifier ctermfg=lightcyan
+	"  hi asmType ctermbg=black ctermfg=brown
 
 endif
 
