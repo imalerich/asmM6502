@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.asm,*.dasm setf asmM6502
+autocmd BufNewFile,BufRead *.asm,*.dasm set ft=asmM6502
