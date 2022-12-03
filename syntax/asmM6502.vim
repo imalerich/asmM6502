@@ -36,6 +36,7 @@ syn keyword asmSettings		opt org
 syn match decNumber	"\<\d\+\>"
 syn match hexNumber	"\$\x\+\>" " 'bug', but adding \< doesn't behave!
 syn match binNumber	"%[01]\+\>" 
+syn match asmImmediate	"#%[01]\+\>" 
 syn match asmImmediate	"#\$\x\+\>"
 syn match asmImmediate	"#\d\+\>"
 syn match asmImmediate	"<\$\x\+\>"
@@ -44,8 +45,6 @@ syn match asmImmediate	">\$\x\+\>"
 syn match asmImmediate	">\d\+\>"
 syn match asmImmediate	"#<\$\x\+\>"
 syn match asmImmediate	"#>\$\x\+\>"
-syn match asmImmediate	"#<\%\x\+\>"
-syn match asmImmediate	"#>\%\x\+\>"
 syn match asmImmediate	"#<\d\+\>"
 syn match asmImmediate	"#>\d\+\>"
 
