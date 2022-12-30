@@ -25,7 +25,7 @@ syn keyword asm65Branch bcc bcs beq bmi bne bpl bvc bvs jmp jsr
 " Atari 800XL 'Sally' undocumented opcodes
 " mnemonics taken from Trevin Beattie's 'Atari Technical Information' page
 " at "http://www.xmission.com/~trevin/atari/atari.shtml"
-syn keyword asmSallyUndoc anc arr asr asx ax7 axe brk dcp jam las lax php rla rra sax slo sre sx7 sy7 xea xs7
+syn keyword asmSallyUndoc anc arr asr asx ax7 axe brk dcp jam las lax rla rra sax slo sre sx7 sy7 xea xs7
 
 syn match asmLabel		"^[a-z_][a-z0-9_]*:"
 syn match asmComment		";.*"hs=s contains=asmTodo
