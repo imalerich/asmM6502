@@ -29,6 +29,7 @@ syn keyword asmSallyUndoc anc arr asr asx ax7 axe brk dcp jam las lax rla rra sa
 
 syn match asmLabel		"^[a-z_][a-z0-9_]*:"
 syn match asmLabel		".^[a-z_][a-z0-9_]*:"
+syn match asmLabel		"\.^[a-z_][a-z0-9_]*:"
 syn match asmComment		";.*"hs=s contains=asmTodo
 syn keyword asmTodo	contained todo fixme xxx warning danger notice bug
 syn region asmString		start=+"+ skip=+\\"+ end=+"+
